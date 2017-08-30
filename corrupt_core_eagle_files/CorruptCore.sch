@@ -9263,8 +9263,7 @@ Allows current flow when high potential at base.</description>
 <text x="261.62" y="-58.42" size="1.778" layer="94">Schematic: Corrupt Core</text>
 <text x="261.62" y="-63.5" size="1.778" layer="94">Author: Grant Haack</text>
 <text x="261.62" y="-68.58" size="1.778" layer="94">Rev: 0.4</text>
-<text x="261.62" y="-76.2" size="1.778" layer="94">License: Creative Commons Attribution-ShareAlike
-CC BY-SA</text>
+<text x="261.62" y="-73.66" size="1.778" layer="94">License: GNU General Public License V3</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="40.64" y="10.16"/>
@@ -10665,10 +10664,6 @@ CC BY-SA</text>
 </schematic>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, Eagle supports online libraries. The ids
 of those online libraries will not be understood (or retained)
