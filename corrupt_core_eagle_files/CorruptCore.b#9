@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -405,9 +406,9 @@ OUT</text>
 <wire x1="48.5" y1="33.25" x2="49.25" y2="34" width="0.1524" layer="21" style="shortdash"/>
 <wire x1="49.25" y1="34" x2="51.5" y2="34" width="0.1524" layer="21" style="shortdash"/>
 <wire x1="92.2" y1="34" x2="99.3" y2="34" width="0.1524" layer="21" style="shortdash"/>
-<wire x1="92.2" y1="2.5" x2="95.75" y2="6" width="0.1524" layer="21" style="shortdash"/>
-<wire x1="95.75" y1="6" x2="99.3" y2="6" width="0.1524" layer="21" style="shortdash"/>
-<wire x1="99.3" y1="6" x2="99.3" y2="34" width="0.1524" layer="21" style="shortdash"/>
+<wire x1="92.2" y1="2.5" x2="93.75" y2="6.75" width="0.1524" layer="21" style="shortdash"/>
+<wire x1="93.75" y1="6.75" x2="99.3" y2="6.75" width="0.1524" layer="21" style="shortdash"/>
+<wire x1="99.3" y1="6.75" x2="99.3" y2="34" width="0.1524" layer="21" style="shortdash"/>
 <polygon width="0.1524" layer="29">
 <vertex x="3.474990625" y="33.2035"/>
 <vertex x="3.560040625" y="33.293559375"/>
@@ -467,6 +468,10 @@ OUT</text>
 <wire x1="0" y1="4" x2="4" y2="0" width="0.1524" layer="20" curve="90"/>
 <dimension x1="0" y1="0" x2="100" y2="0" x3="50" y3="-3.8" textsize="1.778" layer="51"/>
 <dimension x1="0" y1="0" x2="0" y2="58" x3="-4.3" y3="29" textsize="1.778" layer="51"/>
+<text x="54.25" y="42.5" size="1.27" layer="25" font="vector" ratio="10">1</text>
+<text x="54.25" y="40" size="1.27" layer="25" font="vector" ratio="10">2</text>
+<text x="54.25" y="37.5" size="1.27" layer="25" font="vector" ratio="10">3</text>
+<text x="54.25" y="35" size="1.27" layer="25" font="vector" ratio="10">4</text>
 </plain>
 <libraries>
 <library name="wirepad" urn="urn:adsk.eagle:library:412">
@@ -2427,24 +2432,24 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="15.46" y="26.23" size="1.27" layer="28" font="vector" ratio="10" rot="MR90"/>
 </element>
 <element name="TX" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" value="" x="28" y="3.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="27.262" y="2.484" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="bottom-right"/>
+<attribute name="NAME" x="27.262" y="1.734" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="bottom-right"/>
 <attribute name="VALUE" x="28" y="2.9" size="0.0254" layer="27" rot="R180"/>
 </element>
 <element name="RX" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" value="" x="30.5" y="3.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="29.762" y="2.484" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="bottom-right"/>
+<attribute name="NAME" x="29.762" y="1.734" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="bottom-right"/>
 <attribute name="VALUE" x="30.5" y="2.9" size="0.0254" layer="27" rot="R180"/>
 </element>
 <element name="RESET" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" value="" x="33" y="3.5" smashed="yes">
-<attribute name="NAME" x="32.238" y="2.516" size="0.8128" layer="25" font="vector" ratio="20" align="top-left"/>
+<attribute name="NAME" x="32.238" y="1.766" size="0.8128" layer="25" font="vector" ratio="20" align="top-left"/>
 <attribute name="VALUE" x="33" y="4.1" size="0.0254" layer="27"/>
 </element>
 <element name="5V@PROG" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" value="5V" x="28" y="5.5" smashed="yes">
-<attribute name="5V" value="5v" x="27.25" y="6.5" size="0.8128" layer="27" font="vector" ratio="20" display="name"/>
+<attribute name="5V" value="5v" x="27.25" y="7.25" size="0.8128" layer="27" font="vector" ratio="20" display="name"/>
 <attribute name="NAME" x="27.238" y="6.516" size="1.27" layer="25" font="vector" ratio="10" display="off"/>
 <attribute name="VALUE" x="28" y="6.1" size="0.0254" layer="27"/>
 </element>
 <element name="GND@PROG" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" value="GND" x="30.5" y="5.5" smashed="yes">
-<attribute name="GND" value="GND" x="29.75" y="6.5" size="0.8128" layer="27" font="vector" ratio="20" display="name"/>
+<attribute name="GND" value="GND" x="29.5" y="7.25" size="0.8128" layer="27" font="vector" ratio="20" display="name"/>
 <attribute name="NAME" x="29.738" y="6.516" size="1.27" layer="25" ratio="10" display="off"/>
 <attribute name="VALUE" x="30.5" y="6.1" size="0.0254" layer="27"/>
 </element>
@@ -2549,6 +2554,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="97.566" y="48.462" size="1.27" layer="25" font="vector" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="98.65" y="49.7" size="0.0254" layer="27" rot="R270"/>
 </element>
+<element name="DUMMY@PROG" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" value="DUMMY" x="33" y="5.5" smashed="yes">
+<attribute name="NC" value="NC" x="32.25" y="7.25" size="0.8128" layer="27" font="vector" ratio="20" display="name"/>
+<attribute name="VALUE" x="33" y="6.1" size="0.0254" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="+5V">
@@ -2624,6 +2633,7 @@ design rules under a new name.</description>
 <contactref element="GND@CLK" pad="1"/>
 <contactref element="U8" pad="2"/>
 <contactref element="C5" pad="2"/>
+<contactref element="DUMMY@PROG" pad="1"/>
 <wire x1="89" y1="36.2" x2="88.75" y2="51" width="0" layer="19" extent="1-1"/>
 <wire x1="89.25" y1="34.1" x2="89" y2="36.2" width="0" layer="19" extent="1-16"/>
 <wire x1="98" y1="26" x2="89.25" y2="34.1" width="0" layer="19" extent="16-16"/>
@@ -2643,12 +2653,13 @@ design rules under a new name.</description>
 <wire x1="20.77" y1="16.19" x2="18.23" y2="23.81" width="0" layer="19" extent="1-1"/>
 <wire x1="28.5" y1="12.2" x2="20.77" y2="16.19" width="0" layer="19" extent="1-1"/>
 <wire x1="30.5" y1="5.5" x2="28.5" y2="12.2" width="0" layer="19" extent="1-1"/>
+<wire x1="33" y1="5.5" x2="30.5" y2="5.5" width="0" layer="19" extent="1-1"/>
+<wire x1="39.5" y1="5" x2="33" y2="5.5" width="0" layer="19" extent="1-1"/>
+<wire x1="42.5" y1="5" x2="39.5" y2="5" width="0" layer="19" extent="1-1"/>
 <wire x1="22" y1="4.55" x2="30.5" y2="5.5" width="0" layer="19" extent="16-16"/>
 <wire x1="16" y1="4.55" x2="22" y2="4.55" width="0" layer="19" extent="16-16"/>
 <wire x1="9.2512" y1="8.5394" x2="16" y2="4.55" width="0" layer="19" extent="16-16"/>
 <wire x1="2.7488" y1="8.5394" x2="9.2512" y2="8.5394" width="0" layer="19" extent="1-1"/>
-<wire x1="39.5" y1="5" x2="30.5" y2="5.5" width="0" layer="19" extent="1-1"/>
-<wire x1="42.5" y1="5" x2="39.5" y2="5" width="0" layer="19" extent="1-1"/>
 <wire x1="8.635" y1="30.4" x2="16.555" y2="35.6" width="0" layer="19" extent="1-1"/>
 <wire x1="3.555" y1="35.6" x2="8.635" y2="30.4" width="0" layer="19" extent="1-1"/>
 <wire x1="29.92" y1="48.9022" x2="29.555" y2="35.6" width="0" layer="19" extent="1-1"/>
@@ -3234,7 +3245,7 @@ Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
 </note>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
 </note>
