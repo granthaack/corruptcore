@@ -2441,9 +2441,9 @@ design rules under a new name.</description>
 <attribute name="GND" value="GND" x="93.5" y="25.25" size="1.27" layer="27" font="vector" ratio="10" display="name"/>
 <attribute name="VALUE" x="98" y="26.6" size="0.0254" layer="27"/>
 </element>
-<element name="5V@POT1" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" value="" x="98" y="31" smashed="yes">
-<attribute name="5V" value="5V" x="94.75" y="30.25" size="1.27" layer="27" font="vector" ratio="10" display="name"/>
-<attribute name="VALUE" x="98" y="31.6" size="0.0254" layer="27"/>
+<element name="5V@POT1" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" value="" x="97.8222" y="30.6952" smashed="yes">
+<attribute name="5V" value="5V" x="94.5722" y="29.9452" size="1.27" layer="27" font="vector" ratio="10" display="name"/>
+<attribute name="VALUE" x="97.8222" y="31.2952" size="0.0254" layer="27"/>
 </element>
 <element name="POT1" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="1,6/0,8" value="" x="98" y="28.5" smashed="yes">
 <attribute name="NAME" x="92.488" y="27.766" size="1.27" layer="25" font="vector" ratio="10"/>
@@ -2615,9 +2615,9 @@ design rules under a new name.</description>
 <wire x1="89.4392" y1="48.3108" x2="86.75" y2="51" width="0.2032" layer="16"/>
 <wire x1="88.2444" y1="33.20270625" x2="88.2444" y2="33.2056" width="0.2032" layer="16"/>
 <wire x1="88.2444" y1="33.2056" x2="87.35" y2="34.1" width="0.2032" layer="16"/>
-<wire x1="90.44710625" y1="31" x2="98" y2="31" width="0.2032" layer="16"/>
+<wire x1="90.44710625" y1="31" x2="97.8222" y2="30.6952" width="0.2032" layer="16"/>
 <wire x1="90.44710625" y1="31" x2="88.2444" y2="33.20270625" width="0.2032" layer="16"/>
-<wire x1="98" y1="31" x2="97.1416" y2="31" width="0.2032" layer="16"/>
+<wire x1="97.8222" y1="30.6952" x2="97.1416" y2="31" width="0.2032" layer="16"/>
 <wire x1="97.1416" y1="31" x2="95.4786" y2="29.337" width="0.2032" layer="16"/>
 <via x="95.4786" y="29.337" extent="1-16" drill="0.5"/>
 <wire x1="95.4786" y1="24.5214" x2="95.4786" y2="29.337" width="0.2032" layer="1"/>
@@ -2690,7 +2690,7 @@ design rules under a new name.</description>
 <wire x1="31.8362" y1="28.9444" x2="31.64770625" y2="28.9444" width="0.2032" layer="1"/>
 <wire x1="31.64770625" y1="28.9444" x2="31.4394" y2="29.15270625" width="0.2032" layer="1"/>
 <wire x1="31.4394" y1="29.15270625" x2="31.4394" y2="29.3526" width="0.2032" layer="1"/>
-<wire x1="31.4394" y1="29.3526" x2="30.939415625" y2="29.852584375" width="0.2032" layer="1"/>
+<wire x1="31.4394" y1="29.3526" x2="31.0388" y2="29.7532" width="0.2032" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="U1" pad="8"/>

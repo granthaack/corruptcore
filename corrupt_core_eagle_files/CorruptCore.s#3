@@ -9257,6 +9257,8 @@ Allows current flow when high potential at base.</description>
 <part name="CPT2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device=""/>
 <part name="CPT1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device=""/>
 <part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="DUMMY@PROG" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" value="DUMMY"/>
+<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9354,28 +9356,28 @@ Allows current flow when high potential at base.</description>
 <instance part="C4" gate="G$1" x="-10.16" y="45.72"/>
 <instance part="GND34" gate="1" x="-10.16" y="35.56"/>
 <instance part="P+10" gate="1" x="7.62" y="43.18"/>
-<instance part="TX" gate="P" x="35.56" y="-33.02" rot="R180"/>
-<instance part="RX" gate="P" x="35.56" y="-38.1" rot="R180"/>
-<instance part="RESET" gate="P" x="35.56" y="-43.18" rot="R180"/>
+<instance part="TX" gate="P" x="35.56" y="-35.56" rot="R180"/>
+<instance part="RX" gate="P" x="35.56" y="-40.64" rot="R180"/>
+<instance part="RESET" gate="P" x="35.56" y="-45.72" rot="R180"/>
 <instance part="5V@PROG" gate="P" x="43.18" y="-30.48"/>
 <instance part="GND@PROG" gate="P" x="43.18" y="-40.64"/>
 <instance part="GND35" gate="1" x="60.96" y="-40.64" rot="R90"/>
 <instance part="P+11" gate="1" x="60.96" y="-30.48" rot="R270"/>
-<instance part="GND@POT1" gate="P" x="15.24" y="-55.88"/>
-<instance part="5V@POT1" gate="P" x="15.24" y="-60.96"/>
-<instance part="POT1" gate="P" x="15.24" y="-66.04"/>
-<instance part="GND@POT2" gate="P" x="43.18" y="-55.88"/>
-<instance part="5V@POT2" gate="P" x="43.18" y="-60.96"/>
-<instance part="POT2" gate="P" x="43.18" y="-66.04"/>
-<instance part="POT3" gate="P" x="71.12" y="-66.04"/>
-<instance part="5V@POT3" gate="P" x="71.12" y="-60.96"/>
-<instance part="GND@POT3" gate="P" x="71.12" y="-55.88"/>
-<instance part="GND36" gate="1" x="86.36" y="-55.88" rot="R90"/>
-<instance part="GND37" gate="1" x="58.42" y="-55.88" rot="R90"/>
-<instance part="GND38" gate="1" x="30.48" y="-55.88" rot="R90"/>
-<instance part="P+12" gate="1" x="93.98" y="-60.96" rot="R270"/>
-<instance part="P+13" gate="1" x="66.04" y="-60.96" rot="R270"/>
-<instance part="P+14" gate="1" x="38.1" y="-60.96" rot="R270"/>
+<instance part="GND@POT1" gate="P" x="15.24" y="-63.5"/>
+<instance part="5V@POT1" gate="P" x="15.24" y="-68.58"/>
+<instance part="POT1" gate="P" x="15.24" y="-73.66"/>
+<instance part="GND@POT2" gate="P" x="43.18" y="-63.5"/>
+<instance part="5V@POT2" gate="P" x="43.18" y="-68.58"/>
+<instance part="POT2" gate="P" x="43.18" y="-73.66"/>
+<instance part="POT3" gate="P" x="71.12" y="-73.66"/>
+<instance part="5V@POT3" gate="P" x="71.12" y="-68.58"/>
+<instance part="GND@POT3" gate="P" x="71.12" y="-63.5"/>
+<instance part="GND36" gate="1" x="86.36" y="-63.5" rot="R90"/>
+<instance part="GND37" gate="1" x="58.42" y="-63.5" rot="R90"/>
+<instance part="GND38" gate="1" x="30.48" y="-63.5" rot="R90"/>
+<instance part="P+12" gate="1" x="93.98" y="-68.58" rot="R270"/>
+<instance part="P+13" gate="1" x="66.04" y="-68.58" rot="R270"/>
+<instance part="P+14" gate="1" x="38.1" y="-68.58" rot="R270"/>
 <instance part="T1" gate="G$1" x="276.86" y="-38.1" rot="MR180"/>
 <instance part="T2" gate="G$1" x="276.86" y="-5.08" rot="MR180"/>
 <instance part="T3" gate="G$1" x="297.18" y="-38.1" rot="MR180"/>
@@ -9403,6 +9405,8 @@ Allows current flow when high potential at base.</description>
 <instance part="CPT2" gate="P" x="330.2" y="-38.1" rot="R90"/>
 <instance part="CPT1" gate="P" x="330.2" y="-43.18" rot="R270"/>
 <instance part="P+17" gate="1" x="330.2" y="-50.8" rot="MR180"/>
+<instance part="DUMMY@PROG" gate="P" x="43.18" y="-50.8"/>
+<instance part="GND17" gate="1" x="60.96" y="-50.8" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -9474,17 +9478,17 @@ Allows current flow when high potential at base.</description>
 </segment>
 <segment>
 <pinref part="5V@POT3" gate="P" pin="P"/>
-<wire x1="73.66" y1="-60.96" x2="91.44" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-68.58" x2="91.44" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="P+12" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="5V@POT2" gate="P" pin="P"/>
-<wire x1="45.72" y1="-60.96" x2="63.5" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-68.58" x2="63.5" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="P+13" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="5V@POT1" gate="P" pin="P"/>
-<wire x1="17.78" y1="-60.96" x2="35.56" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-68.58" x2="35.56" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="P+14" gate="1" pin="+5V"/>
 </segment>
 <segment>
@@ -9610,17 +9614,17 @@ Allows current flow when high potential at base.</description>
 </segment>
 <segment>
 <pinref part="GND@POT3" gate="P" pin="P"/>
-<wire x1="73.66" y1="-55.88" x2="83.82" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-63.5" x2="83.82" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="GND36" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND@POT2" gate="P" pin="P"/>
-<wire x1="45.72" y1="-55.88" x2="55.88" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-63.5" x2="55.88" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="GND37" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND@POT1" gate="P" pin="P"/>
-<wire x1="17.78" y1="-55.88" x2="27.94" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-63.5" x2="27.94" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="GND38" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9663,6 +9667,11 @@ Allows current flow when high potential at base.</description>
 <wire x1="320.04" y1="0" x2="317.5" y2="0" width="0.1524" layer="91"/>
 <junction x="317.5" y="0"/>
 </segment>
+<segment>
+<pinref part="DUMMY@PROG" gate="P" pin="P"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="45.72" y1="-50.8" x2="58.42" y2="-50.8" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -9683,9 +9692,9 @@ Allows current flow when high potential at base.</description>
 </segment>
 <segment>
 <pinref part="RESET" gate="P" pin="P"/>
-<wire x1="33.02" y1="-43.18" x2="27.94" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="27.94" y="-43.18"/>
-<label x="27.94" y="-43.18" size="1.778" layer="95" rot="R180"/>
+<wire x1="33.02" y1="-45.72" x2="27.94" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="27.94" y="-45.72"/>
+<label x="27.94" y="-45.72" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -9717,9 +9726,9 @@ Allows current flow when high potential at base.</description>
 </segment>
 <segment>
 <pinref part="RX" gate="P" pin="P"/>
-<wire x1="33.02" y1="-38.1" x2="27.94" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="27.94" y="-38.1"/>
-<label x="27.94" y="-38.1" size="1.778" layer="95" rot="R180"/>
+<wire x1="33.02" y1="-40.64" x2="27.94" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="27.94" y="-40.64"/>
+<label x="27.94" y="-40.64" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -9731,9 +9740,9 @@ Allows current flow when high potential at base.</description>
 </segment>
 <segment>
 <pinref part="TX" gate="P" pin="P"/>
-<wire x1="33.02" y1="-33.02" x2="27.94" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="27.94" y="-33.02"/>
-<label x="27.94" y="-33.02" size="1.778" layer="95" rot="R180"/>
+<wire x1="33.02" y1="-35.56" x2="27.94" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="27.94" y="-35.56"/>
+<label x="27.94" y="-35.56" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -10514,9 +10523,9 @@ Allows current flow when high potential at base.</description>
 </segment>
 <segment>
 <pinref part="POT3" gate="P" pin="P"/>
-<wire x1="73.66" y1="-66.04" x2="81.28" y2="-66.04" width="0.1524" layer="91"/>
-<junction x="81.28" y="-66.04"/>
-<label x="81.28" y="-66.04" size="1.778" layer="95"/>
+<wire x1="73.66" y1="-73.66" x2="81.28" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="81.28" y="-73.66"/>
+<label x="81.28" y="-73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -10541,9 +10550,9 @@ Allows current flow when high potential at base.</description>
 </segment>
 <segment>
 <pinref part="POT1" gate="P" pin="P"/>
-<wire x1="17.78" y1="-66.04" x2="25.4" y2="-66.04" width="0.1524" layer="91"/>
-<junction x="25.4" y="-66.04"/>
-<label x="25.4" y="-66.04" size="1.778" layer="95"/>
+<wire x1="17.78" y1="-73.66" x2="25.4" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="25.4" y="-73.66"/>
+<label x="25.4" y="-73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POT2" class="0">
@@ -10555,9 +10564,9 @@ Allows current flow when high potential at base.</description>
 </segment>
 <segment>
 <pinref part="POT2" gate="P" pin="P"/>
-<wire x1="45.72" y1="-66.04" x2="53.34" y2="-66.04" width="0.1524" layer="91"/>
-<junction x="53.34" y="-66.04"/>
-<label x="53.34" y="-66.04" size="1.778" layer="95"/>
+<wire x1="45.72" y1="-73.66" x2="53.34" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="53.34" y="-73.66"/>
+<label x="53.34" y="-73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="QP2" class="0">
