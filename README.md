@@ -29,3 +29,14 @@ I realize this is obtuse and a little wierd, and there will be a future revision
 
 ## Notes
 Please note, I do not have any formal training in Electrical Engineering or PCB design. If my schematic or board is terrible, do not hesistate to open an issue and let me know. I'm basically figuring all of this out as I go along.
+
+##License Info
+Corrupt Core
+This device and software is designed to induce real time glitches in videogame hardware
+Copyright (C) 2017 Grant Haack
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
